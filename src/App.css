@@ -1,24 +1,30 @@
 .App {
   text-align: center;
-  background-color: #1c5f4a;
-  width: 100vw;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bingo-container {
+  background-color: #1c5f4a;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  width: 100vw;
 }
 
 .space {
   border: 2px solid white;
   padding: 4vw;
+  max-width: 200px;
+  max-height: 200px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1c5f4a;
 }
 h2 {
   color: #d8a158;
