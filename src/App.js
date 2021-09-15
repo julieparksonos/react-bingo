@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const fillBoard = spaces.map((item) => item);
     setSpacesUsed(fillBoard);
-  }, [spaces]);
+  }, []);
 
   return (
     <div className="App">
